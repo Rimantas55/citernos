@@ -59,7 +59,7 @@
 									<td><?= $l ?></td>
 									<td><?= vol_m3(3, 10, $l) ?></td>
 									<th><?= get_trucks(vol_m3(3, 10, $l),120) ?></th>
-									<th><?= get_price(120 * 0.75 * get_trucks(vol_m3(3, 10, $l),120) + 50)?></th>
+									<th><?= get_price(120, get_trucks(vol_m3(3, 10, $l),120))?></th>
 									<th><?= get_trucks(vol_m3(3, 10, $l),170) ?></th>
 									<th>120Kaina Eur</th>
 									<th><?= get_trucks(vol_m3(3, 10, $l),220) ?></th>
@@ -76,3 +76,8 @@
 				</div>
 			</body>
 			</html>
+
+
+
+<?php
+

@@ -12,9 +12,9 @@ function get_trucks($volume, $truck_volume) {
 }
 
 
-function get_price($truck, $price = 0.75, $truck_volume, $admin_fee = 50 ) {
+function get_price($truck, $truck_volume, $price = 0.75, $admin_fee = 50 ) {
 
-	return ceil($truck * $price * $truck_volume + $admin_fee);
+	return ceil($truck * $truck_volume * $price + $admin_fee);
 }
 
 ?>
